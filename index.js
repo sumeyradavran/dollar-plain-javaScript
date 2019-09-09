@@ -24,7 +24,10 @@ function fetchData() {
     })
     .then(() => loading.classList.add("hidden"))
     .then(() => table.classList.remove("hidden"))
-    .catch(err => console.log(err));
+    .catch(err => {
+      document.querySelector(".content").classList.add("hidden");
+      document.querySelector(".error").classList.remove("hidden");
+    });
 }
 
 function generateTable(table, data) {

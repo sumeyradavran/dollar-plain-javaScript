@@ -62,6 +62,15 @@ thead th {
   margin-bottom: 80px;
 }
 
+.bigText {
+  font-size: 5em;
+  text-align: center;
+}
+
+.errorText {
+  max-width: 60%;
+  margin: 6% 0;
+}
 .flex-direction {
   display: flex;
   flex-direction: column;
@@ -72,6 +81,9 @@ thead th {
   justify-content: center;
 }
 
+#refreshButton {
+  margin: 0;
+}
 .loader {
   border: 1.6rem solid white;
   border-radius: 50%;
@@ -97,5 +109,8 @@ thead th {
 @media screen and (max-width: 600px) {
   * {
     font-size: 15px;
+  }
+  .bigText {
+    font-size: 3em;
   }
 }

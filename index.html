@@ -12,16 +12,30 @@
     <title>Dolar</title>
   </head>
   <body>
-    <div class="middle">
-      <button onclick="updateButton()">UPDATE RATES</button>
+    <div class="content">
+      <div class="middle">
+        <button onclick="updateButton()">UPDATE RATES</button>
+      </div>
+      <div class="middle">
+        <table class="hidden"></table>
+      </div>
+      <div class="loading">
+        <div class="middle flex-direction">
+          <p class="text">Please wait, we are getting data.</p>
+          <div class="loader"></div>
+        </div>
+      </div>
     </div>
-    <div class="middle">
-      <table class="hidden"></table>
-    </div>
-    <div class="loading">
-      <div class="middle flex-direction">
-        <p class="text">Please wait, we are getting data.</p>
-        <div class="loader"></div>
+
+    <div class="error hidden">
+      <div class="middle flex-direction error hidden">
+        <div class="errorText">
+          <p class="bigText">Oops! Nothing to see Here.</p>
+        </div>
+        <p class="text">Please refresh the page.</p>
+        <button id="refreshButton" onclick="window.location.reload()">
+          Refresh
+        </button>
       </div>
     </div>
 
